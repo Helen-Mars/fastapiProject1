@@ -7,4 +7,4 @@ router = APIRouter()
 
 @router.get("/about", response_class=HTMLResponse)
 async def about(request: Request):
-    return templates.TemplateResponse("about.html", {"request": request})
+    return templates.TemplateResponse("pages/about.html", {"request": request})

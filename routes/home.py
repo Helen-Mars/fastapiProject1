@@ -5,6 +5,7 @@ from templates import templates
 
 router = APIRouter()
 
+
 @router.get("/", response_class=HTMLResponse)
 async def home(request: Request):
-    return templates.TemplateResponse("home.html", {"request": request})
+    return templates.TemplateResponse("pages/home.html", {"request": request})

@@ -1,3 +1,36 @@
+
+.logo-img {
+    height: 2.0em;  /* Adjusts the height to match the surrounding text size */
+    /*vertical-align: middle;  !* Aligns the image vertically with the text *!*/
+}
+
+.icon-button {
+   background: transparent;
+   border: none;
+   padding: 5px;
+   cursor: pointer;
+}
+.icon-button svg {
+   fill: red; /* Color of the SVG */
+}
+
+.horizontal-center {
+    display: flex;
+    justify-content: center;
+}
+
+.details-list {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+}
+
+.details-list li {
+    font-weight: normal; /* If you want all list items to have normal font weight by default */
+}
+
+
 body {
     font-family: Arial, sans-serif;
 }
