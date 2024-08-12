@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1609a26a-79a3-4dde-873a-fcbd5a253b32" name="Changes" comment="This is a fastapi project." />
+    <list default="true" id="1609a26a-79a3-4dde-873a-fcbd5a253b32" name="Changes" comment="This is a fastapi project.">
+      <change afterPath="$PROJECT_DIR$/static/css/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/home.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,8 +21,8 @@
         <option value="FastAPI main" />
         <option value="FastAPI test_main" />
         <option value="Python Script" />
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -147,7 +152,7 @@
       <workItem from="1721638829572" duration="645000" />
       <workItem from="1721698930657" duration="9340000" />
       <workItem from="1723168144475" duration="15611000" />
-      <workItem from="1723447223468" duration="7064000" />
+      <workItem from="1723447223468" duration="9599000" />
     </task>
     <task id="LOCAL-00001" summary="This is a fastapi project.">
       <option name="closed" value="true" />
@@ -189,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723454146997</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="This is a fastapi project.">
+      <option name="closed" value="true" />
+      <created>1723454544166</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1723454544166</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,7 +213,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="This is a fastapi project." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/fastApiProject1$fastApiProject1.coverage" NAME="fastApiProject1 Coverage Results" MODIFIED="1723450943407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/fastApiProject1$fastApiProject1.coverage" NAME="fastApiProject1 Coverage Results" MODIFIED="1723456221094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/fastApiProject1$home.coverage" NAME="home Coverage Results" MODIFIED="1721626945821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/routes" />
   </component>
 </project>

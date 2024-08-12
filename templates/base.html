@@ -5,6 +5,7 @@
 <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <title>{% block title %}My Profile{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('css', path='/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('css', path='/footer.css') }}">
 <!--    <link rel="stylesheet" href="{{ url_for('css', path='/all.min.css') }}">-->
     {% block head_append %}
         <!-- Default head content -->
@@ -36,10 +37,24 @@
         <!-- Default content -->
         {% endblock %}
     </main>
-    
+
 
     <footer>
         <!-- Footer content -->
+
+        <div class="footer-content">
+            <p>&copy; 2024 My Website. All rights reserved.</p>
+            <ul>
+                <li><a href="/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/terms-of-service">Terms of Service</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </div>
+        {% block footer %}
+
+        <!-- Default content -->
+        {% endblock %}
+
     </footer>
 </body>
 </html>

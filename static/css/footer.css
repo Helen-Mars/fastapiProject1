@@ -1,0 +1,42 @@
+
+/* Basic footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0; /* Adjust vertical padding */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.footer-content p {
+    margin: 0;
+    margin-bottom: 10px; /* Add space below the paragraph */
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Align list items horizontally */
+}
+
+.footer-content li {
+    margin: 0 10px; /* Space between list items */
+}
+
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
