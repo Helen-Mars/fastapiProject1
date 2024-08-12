@@ -2,22 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}My FastAPI App{% endblock %}</title>
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>{% block title %}My Profile{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('css', path='/style.css') }}">
-    <link rel="stylesheet" href="{{ url_for('css', path='/all.min.css') }}">
+<!--    <link rel="stylesheet" href="{{ url_for('css', path='/all.min.css') }}">-->
+    {% block head_append %}
+        <!-- Default head content -->
+    {% endblock %}
 
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <a href="../.." aria-label="My home icon" data-md-component="logo" title="My homepage">
-                    <img src="{{ url_for('images', path='/switch_to_home.png') }}" alt="logo" class="logo-img">
-                </a>
-                <li><a href="/">Home</a></li>
-                <li><a href="/display">Display</a></li>
+                <li>
+                    <a href="../.." aria-label="My home icon" data-md-component="logo" title="My homepage">
+                        <img src="{{ url_for('images', path='/house-30.png') }}" alt="logo" class="logo-img">
+                    </a>
+                </li>
+
+<!--                <li><a href="/">Home</a></li>-->
+                <li><a href="/display">My Work</a></li>
                 <li><a href="/about">About</a></li>
+
+
 
             </ul>
         </nav>
@@ -28,5 +36,10 @@
         <!-- Default content -->
         {% endblock %}
     </main>
+    
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
 </body>
 </html>

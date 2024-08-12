@@ -2,12 +2,21 @@
 
 {% block title %}About{% endblock %}
 
-{% block content %}
-<div class="horizontal-center">
-    <div>
-        <h1>About Us</h1>
-        <p>This is the about page of your FastAPI application.</p>
-    </div>
+{% block head_append %}
+    {{ super() }}
+    <!-- Additional head content specific to the About page -->
+    <link rel="stylesheet" href="{{ url_for('css', path='/about_style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock %}
 
+{% block content %}
+<div class="container">
+    <h1>Beautifully Displayed Text</h1>
+    <h2>Subheading Example</h2>
+    <p>This is a paragraph of text styled with CSS to appear more readable and attractive. Notice the use of <span class="highlight">highlighted text</span> for emphasis.</p>
+    <blockquote>
+        This is a blockquote. It is used to highlight a quote or a notable excerpt from another source.
+    </blockquote>
+    <p>For more information, visit <a href="https://example.com">this link</a>.</p>
 </div>
 {% endblock %}
