@@ -1,6 +1,10 @@
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+.horizontal-center {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;     /* Center content vertically */
+    height: 100vh;           /* Full viewport height */
+}
+
+.horizontal-center > div {
+    text-align: center;      /* Center text inside the inner div */
 }

@@ -1,21 +1,29 @@
-{% extends "base.html" %}
+{% extends "base2.html" %}
 
 {% block title %}Homepage{% endblock %}
 
+{% block head_append %}
+    <style>
+        .horizontal-center {
+            display: flex;
+            justify-content: center; /* Center content horizontally */
+            align-items: center;     /* Center content vertically */
+            height: 50vh;
+        }
 
-{% block content %}
-
-<div class="horizontal-center">
-    <div>
-        <h1>Welcome to the Homepage</h1>
-        <p>This is the homepage of your FastAPI application.</p>
-    </div>
-</div>
-
+        .horizontal-center > div {
+            text-align: center;      /* Center text inside the inner div */
+        }
+    </style>
+<!--    <link rel="stylesheet" href="{{ url_for('css', path='/style.css') }}">-->
 {% endblock %}
 
-{% block footer %}
-
-
+{% block main_append %}
+    <div class="horizontal-center">
+        <div>
+            <h1>Welcome to the Homepage</h1>
+            <p>This is the homepage of your FastAPI application.</p>
+        </div>
+    </div>
 
 {% endblock %}

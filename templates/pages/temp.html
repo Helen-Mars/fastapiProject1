@@ -1,0 +1,63 @@
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../.." aria-label="My home icon" data-md-component="logo" title="My homepage">
+                        <img src="{{ url_for('images', path='/house-30.png') }}" alt="logo" class="logo-img">
+                    </a>
+                </li>
+
+<!--                <li><a href="/">Home</a></li>-->
+                <li><a href="/display">My Work</a></li>
+                <li><a href="/about">About</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <body>
+
+    <main>
+      <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+            <span class="fs-4">Simple header</span>
+          </a>
+
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          </ul>
+        </header>
+      </div>
+
+        {% block content %}
+        <!-- Default content -->
+        {% endblock %}
+    </main>
+
+
+    <footer>
+        <!-- Footer content -->
+
+        <div class="footer-content">
+            <p>&copy; 2024 My Website. All rights reserved.</p>
+            <ul>
+                <li><a href="/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/terms-of-service">Terms of Service</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </div>
+        {% block footer %}
+
+        <!-- Default content -->
+        {% endblock %}
+
+    </footer>
+</body>

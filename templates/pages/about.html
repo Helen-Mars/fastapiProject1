@@ -1,16 +1,30 @@
-{% extends "base.html" %}
+{% extends "base2.html" %}
 
 {% block title %}About{% endblock %}
 
 {% block head_append %}
-    {{ super() }}
-    <!-- Additional head content specific to the About page -->
-    <link rel="stylesheet" href="{{ url_for('css', path='/about_style.css') }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    .horizontal-center {
+        /*display: flex;*/
+        /*flex-direction: column; !* Arrange items vertically *!*/
+        /*justify-content: center; !* Center items horizontally *!*/
+        /*align-items: center;     !* Center items vertically *!*/
+        text-align: center;      /* Center text within the container */
+        height: 50vh;           /* Full viewport height */
+        /*padding: 20px;           !* Optional padding for spacing *!*/
+    }
+
+    .highlight {
+        background-color: yellow; /* Highlight background color */
+        font-weight: bold;
+    }  /* Highlight text style */
+</style>
+
 {% endblock %}
 
-{% block content %}
-<div class="container">
+{% block main_append %}
+<div class="horizontal-center">
     <h1>Beautifully Displayed Text</h1>
     <h2>Subheading Example</h2>
     <p>This is a paragraph of text styled with CSS to appear more readable and attractive. Notice the use of <span class="highlight">highlighted text</span> for emphasis.</p>
