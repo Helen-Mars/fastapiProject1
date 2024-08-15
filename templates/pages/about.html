@@ -6,31 +6,53 @@
 
 <style>
     .horizontal-center {
-        /*display: flex;*/
-        /*flex-direction: column; !* Arrange items vertically *!*/
-        /*justify-content: center; !* Center items horizontally *!*/
-        /*align-items: center;     !* Center items vertically *!*/
-        text-align: center;      /* Center text within the container */
-        height: 50vh;           /* Full viewport height */
-        /*padding: 20px;           !* Optional padding for spacing *!*/
+        display: flex;
+        justify-content: center; /* Center content horizontally */
+        align-items: center;     /* Center content vertically */
+        height: 50vh;
     }
 
-    .highlight {
-        background-color: yellow; /* Highlight background color */
-        font-weight: bold;
-    }  /* Highlight text style */
+    .horizontal-center > div {
+        text-align: left;      /* Center text inside the inner div */
+    }
 </style>
 
 {% endblock %}
 
 {% block main_append %}
 <div class="horizontal-center">
-    <h1>Beautifully Displayed Text</h1>
-    <h2>Subheading Example</h2>
-    <p>This is a paragraph of text styled with CSS to appear more readable and attractive. Notice the use of <span class="highlight">highlighted text</span> for emphasis.</p>
-    <blockquote>
-        This is a blockquote. It is used to highlight a quote or a notable excerpt from another source.
-    </blockquote>
-    <p>For more information, visit <a href="https://example.com">this link</a>.</p>
+    <div>
+        <h1 class="mb-3 fw-semibold 1h-1">
+            About Myself
+        </h1>
+
+        <section class="pb-md-5 mb-5">
+            <h2 class="display-5 mb-3 fw-semibold lh-sm">
+                Where am I from?
+            </h2>
+            <p class="lead mb-4">
+                I was born in a village far from the big city, with no high buildings or large mansions, in Gansu Province.
+                My hometown is Jingning County, Pingliang City, Gansu Province.
+                More precisely, it is called Weirong Town in Jingning County.<br>
+                <br>
+                Very different from the big city, it is dominated by agriculture and handicrafts.
+                <br><br>
+                The fruits and food are very delicious and are sold overseas, especially apples and roast chickens.
+
+
+
+            </p>
+
+
+        </section>
+
+
+        <p class="d-flex justify-content-start lead fw-normal">
+            <a href="https://www.linkedin.com/in/hailong-ma-6b6ab9315" class="icon-link icon-link-hover fw-semibold">
+                For more my special information, visit my Linkedin link.
+<!--                <svg class="bi"><use xlink:href="bootstrap-icons.svg#heart-fill"></use></svg>-->
+            </a>
+        </p>
+    </div>
 </div>
 {% endblock %}

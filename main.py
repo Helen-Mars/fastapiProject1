@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 
-from routes import home, about, display
+from routes import *
+from routes import learning, home, about, work, cooperation
 
 app = FastAPI()
 
@@ -17,5 +18,8 @@ app.mount("/static/images", StaticFiles(directory="static/images"), name="images
 # Include routes
 app.include_router(home.router)
 
-app.include_router(display.router)
+app.include_router(learning.router)
+app.include_router(work.router)
+app.include_router(cooperation.router)
+# app.include_router(display.router)
 app.include_router(about.router)
