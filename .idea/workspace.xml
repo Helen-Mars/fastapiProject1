@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1609a26a-79a3-4dde-873a-fcbd5a253b32" name="Changes" comment="This is a fastapi project.">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/learning.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/learning.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/test2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/test2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/work.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/work.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +169,14 @@
       <workItem from="1723596853889" duration="13872000" />
       <workItem from="1723687601821" duration="10855000" />
       <workItem from="1723713593307" duration="173000" />
-      <workItem from="1723714301141" duration="330000" />
+      <workItem from="1723714301141" duration="677000" />
+      <workItem from="1724305656581" duration="91000" />
+      <workItem from="1724305962374" duration="3214000" />
+      <workItem from="1724377391365" duration="957000" />
+      <workItem from="1724382672628" duration="6257000" />
+      <workItem from="1724747454176" duration="1879000" />
+      <workItem from="1724809903509" duration="56000" />
+      <workItem from="1724809993651" duration="13569000" />
     </task>
     <task id="LOCAL-00001" summary="This is a fastapi project.">
       <option name="closed" value="true" />
@@ -258,7 +274,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723714530259</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="This is a fastapi project.">
+      <option name="closed" value="true" />
+      <created>1723714777799</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1723714777799</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +304,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="This is a fastapi project." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/fastApiProject1$fastApiProject1.coverage" NAME="fastApiProject1 Coverage Results" MODIFIED="1723712501595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/fastApiProject1$fastApiProject1.coverage" NAME="fastApiProject1 Coverage Results" MODIFIED="1724810012089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/fastApiProject1$home.coverage" NAME="home Coverage Results" MODIFIED="1721626945821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/routes" />
   </component>
 </project>

@@ -3,17 +3,44 @@
 {% block title %}Work{% endblock %}
 
 {% block head_append %}
-    <style>
-        .horizontal-center {
-            display: flex;
-            justify-content: center; /* Center content horizontally */
-            align-items: center;     /* Center content vertically */
-            height: 50vh;
-        }
-
-        .horizontal-center > div {
-            text-align: left;      /* Center text inside the inner div */
-        }
-    </style>
 <!--    <link rel="stylesheet" href="{{ url_for('css', path='/style.css') }}">-->
+{% endblock %}
+
+{% block main_append %}
+<section class="container-xxl bd-gutter masthead-followup mt-5">
+    <div class="col-lg-7 mx-auto pb-3 mb-3 mb-md-5 text-md-center">
+        <h2 class="display-5 mb-3 fw-semibold lh-sm">Work Experience</h2>
+        <p class="lead fw-normal">
+            Here is a summary of my work experience.
+        </p>
+    </div>
+
+    <div class="container mt-5">
+        <section class="list-group">
+            <!-- Job 1 -->
+            <div class="list-group-item">
+                <h5 class="mb-1">Position Title at Company Name</h5>
+                <h6 class="mb-1 text-muted">Company Name</h6>
+                <p class="mb-1">
+                    <strong>Duration:</strong> January 2020 - Present
+                </p>
+                <p class="mb-1">
+                    <strong>Description:</strong> Briefly describe your role, responsibilities, and achievements in this position. Highlight any major projects or contributions.
+                </p>
+            </div>
+            <!-- Job 2 -->
+            <div class="list-group-item">
+                <h5 class="mb-1">Position Title at Another Company</h5>
+                <h6 class="mb-1 text-muted">Another Company</h6>
+                <p class="mb-1">
+                    <strong>Duration:</strong> June 2018 - December 2019
+                </p>
+                <p class="mb-1">
+                    <strong>Description:</strong> Briefly describe your role, responsibilities, and achievements in this position. Highlight any major projects or contributions.
+                </p>
+            </div>
+            <!-- 可以添加更多的工作经历项 -->
+        </section>
+    </div>
+</section>
 {% endblock %}
