@@ -14,6 +14,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 app.mount("/static/css", StaticFiles(directory="static/css"), name="css")
 app.mount("/static/js", StaticFiles(directory="static/js"), name="js")
 app.mount("/static/images", StaticFiles(directory="static/images"), name="images")
+app.mount("/media", StaticFiles(directory="media"), name="media")
 
 # Include routes
 app.include_router(home.router)
