@@ -5,12 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1609a26a-79a3-4dde-873a-fcbd5a253b32" name="Changes" comment="This is a fastapi project.">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/Nha-Trang.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/carousel_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/carousel_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/carousel_3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/carousel_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/carousel_5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/carousel_6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/carousel_7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/dragon-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/svgs/icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base2_copy.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/header/assets/brand/bootstrap-logo-white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/bootstrap-logo-white.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/header/assets/brand/bootstrap-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/bootstrap-logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/header/assets/dist/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/header/assets/dist/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/header/assets/dist/css/bootstrap.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/header/assets/dist/css/bootstrap.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/header/assets/dist/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/header/assets/dist/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/header/assets/js/color-modes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/header/headers.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/house-30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/switch_to_home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/pages/learning.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/learning.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/pages/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/pages/test2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/test2.html" afterDir="false" />
@@ -65,7 +87,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/FASTapi/fastApiProject1/static/js&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/50392/OneDrive/project/fastApiProject1/templates&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -77,15 +99,16 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\50392\OneDrive\project\fastApiProject1\templates" />
       <recent name="E:\FASTapi\fastApiProject1\static\js" />
       <recent name="E:\FASTapi\fastApiProject1\data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\FASTapi\fastApiProject1\static\header\assets\brand" />
-      <recent name="E:\FASTapi\fastApiProject1\static\header\assets" />
-      <recent name="E:\FASTapi\fastApiProject1\static\header" />
-      <recent name="E:\FASTapi\fastApiProject1\static\css\assets\js" />
-      <recent name="E:\FASTapi\fastApiProject1\static\css\assets\dist\css" />
+      <recent name="C:\Users\50392\OneDrive\project\fastApiProject1\static\images" />
+      <recent name="C:\Users\50392\OneDrive\project\fastApiProject1\media" />
+      <recent name="C:\Users\50392\OneDrive\project\fastApiProject1\static" />
+      <recent name="C:\Users\50392\OneDrive\project\fastApiProject1\svgs" />
+      <recent name="C:\Users\50392\OneDrive\project\fastApiProject1\static\bootstrap" />
     </key>
   </component>
   <component name="RunManager" selected="FastAPI.fastApiProject1">
@@ -176,7 +199,18 @@
       <workItem from="1724382672628" duration="6257000" />
       <workItem from="1724747454176" duration="1879000" />
       <workItem from="1724809903509" duration="56000" />
-      <workItem from="1724809993651" duration="13569000" />
+      <workItem from="1724809993651" duration="14348000" />
+      <workItem from="1724839433063" duration="19000" />
+      <workItem from="1724920809515" duration="47000" />
+      <workItem from="1725433254615" duration="6718000" />
+      <workItem from="1725505538758" duration="14027000" />
+      <workItem from="1725526034679" duration="30000" />
+      <workItem from="1725527950199" duration="2294000" />
+      <workItem from="1729043612520" duration="26444000" />
+      <workItem from="1729131195746" duration="10961000" />
+      <workItem from="1729150278030" duration="5074000" />
+      <workItem from="1729157411880" duration="162000" />
+      <workItem from="1729216445167" duration="11113000" />
     </task>
     <task id="LOCAL-00001" summary="This is a fastapi project.">
       <option name="closed" value="true" />
@@ -282,7 +316,31 @@
       <option name="project" value="LOCAL" />
       <updated>1723714777799</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="This is a fastapi project.">
+      <option name="closed" value="true" />
+      <created>1724838208803</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1724838208803</updated>
+    </task>
+    <task id="LOCAL-00015" summary="This is a fastapi project.">
+      <option name="closed" value="true" />
+      <created>1725521798263</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1725521798263</updated>
+    </task>
+    <task id="LOCAL-00016" summary="This is a fastapi project.">
+      <option name="closed" value="true" />
+      <created>1725529475994</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1725529475994</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,7 +362,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="This is a fastapi project." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/fastApiProject1$fastApiProject1.coverage" NAME="fastApiProject1 Coverage Results" MODIFIED="1724810012089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/fastApiProject1$fastApiProject1.coverage" NAME="fastApiProject1 Coverage Results" MODIFIED="1729216458388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/fastApiProject1$home.coverage" NAME="home Coverage Results" MODIFIED="1721626945821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/routes" />
   </component>
 </project>
