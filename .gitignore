@@ -1,0 +1,32 @@
+.dockerignore
+.env
+database.db
+audio/peace_music/君若 - 金陵遗梦 epiano.mp3
+audio/peace_music/张晓红 - 千年一叹.mp3
+audio/peace_music/杨青 - 归来.mp3
+content/publication/pdf/1-s2.0-S0009261421005820-main.pdf
+content/publication/pdf/1-s2.0-S0009261421009817-main.pdf
+content/publication/pdf/asia.201901182.pdf
+content/publication/pdf/Asian J. Org. Chem. 2020, 9, 2170-2175.pdf
+content/publication/pdf/Asian J. Org. Chem. 2021, 10, 1454–1462.pdf
+content/publication/pdf/c9tb02589h.pdf
+content/publication/pdf/d1tb00142f.pdf
+content/publication/pdf/zhang-et-al-2020-experimental-and-computational-study-on-the-intramolecular-hydrogen-atom-transfer-reactions-of.pdf
+content/publication/pdf/zhang-et-al-2020-triggering-the-antitumor-activity-of-acyclic-enediyne-through-maleimide-assisted-rearrangement-and.pdf
+content/publication/pdf/zhao-et-al-2019-silicon-promoted-cationic-polymerization-of-phenylacetylenes.pdf
+router/__pycache__/__init__.cpython-312.pyc
+router/__pycache__/__init__.cpython-313.pyc
+router/__pycache__/about.cpython-312.pyc
+router/__pycache__/about.cpython-313.pyc
+router/__pycache__/cooperation.cpython-312.pyc
+router/__pycache__/cooperation.cpython-313.pyc
+router/__pycache__/cultivation.cpython-313.pyc
+router/__pycache__/home.cpython-312.pyc
+router/__pycache__/home.cpython-313.pyc
+router/__pycache__/learning.cpython-312.pyc
+router/__pycache__/learning.cpython-313.pyc
+router/__pycache__/travel.cpython-313.pyc
+router/__pycache__/work.cpython-312.pyc
+router/__pycache__/work.cpython-313.pyc
+static/audio/只要平凡.mp3
+media/Nha-Trang.mp4
