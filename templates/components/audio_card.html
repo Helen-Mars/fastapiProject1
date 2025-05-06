@@ -1,0 +1,25 @@
+<div class="col">
+  <div class="card border-0 rounded-4 overflow-hidden"
+      style="background-image: url('{{ card.bg_image }}');
+              background-size: cover;
+              background-position: top left;">
+    <div class="card-body text-muted p-4">
+      <h5 class="card-title fw-semibold text-center">{{ card.title }}</h5>
+      <p class="card-text fw-normal">
+        {{ card.description | safe }}
+      </p>
+      <figcaption class="blockquote-footer text-end">
+        <cite title="Source Title">{{card.from}}</cite>
+      </figcaption>
+
+      <p class="card-text text-end fw-light">
+        <small>{{ card.last_updated }}</small>
+      </p>
+
+      <audio controls loop class="w-100">
+        <source src="{{ card.audio_src }}" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+</div>

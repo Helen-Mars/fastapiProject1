@@ -1,0 +1,64 @@
+
+<div class="container text-center">
+    <video class="object-fit-contain" controls src="{{ url_for('media', path='/Nha-Trang.mp4') }}" width="100%"></video>
+    <p class="text-start">
+        The sun dipped low on the horizon, casting a golden glow over the tranquil waves lapping at the shore. Seagulls
+        cried out overhead, their silhouettes dancing against the vibrant sky as the salty breeze tousled my hair.
+        Children laughed and splashed in the water, building castles in the sand, while the rhythmic sound of the ocean
+        created a soothing backdrop. As the tide ebbed and flowed, I felt a deep sense of peace wash over me, reminding
+        me of the beauty and serenity that only the seaside can offer.
+    </p>
+</div>
+
+<div class="container mt-4 mb-4 text-center">
+    <h1 class="mb-4 fw-semibold text-center"> Do you remember the sunset we once watched.</h1>
+    <div class="row gap-0 row-gap-3">
+        {% for image, thumb in images %}
+        <div class="card col-3">
+            <a data-lightbox="roadtrip" href="{{ url_for('images', path=image) }}">
+                <img alt="..." class="card-img-top" src="{{ url_for('images', path=thumb) }}">
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+    <p class="text-start">As the sun begins its descent, the sky is painted with hues of orange, pink, and purple,
+        casting a warm glow over the horizon. The clouds, once white and fluffy, now shimmer with golden edges,
+        reflecting the fading light. The air cools, and a sense of peacefulness settles over the landscape. The fading
+        daylight gives way to a tranquil evening, as the world slows down and the stars begin to emerge, marking the end
+        of another beautiful day.</p>
+</div>
+
+<div class="container mt-4 mb-4">
+    <h1 class="text-center">Welcome to my music.</h1>
+    <audio controls id="player">
+        <source src="{{ url_for('audio', path='/只要平凡.mp3') }}" type="audio/mp3">
+<!--            <source src="/path/to/audio.ogg" type="audio/ogg"/>-->
+    </audio>
+</div>
+
+<div class="container mt-4 mb-4">
+    <div class="list-group">
+        <!-- Job 1 -->
+        <div class="list-group-item">
+            <h5 class="mb-1">Position Title at Company Name</h5>
+            <h6 class="mb-1 text-muted">Company Name</h6>
+            <p class="mb-1">
+                <strong>Duration:</strong> January 2020 - Present
+            </p>
+            <p class="mb-1">
+                <strong>Description:</strong> Briefly describe your role, responsibilities, and achievements in this position. Highlight any major projects or contributions.
+            </p>
+        </div>
+        <!-- Job 2 -->
+        <div class="list-group-item">
+            <h5 class="mb-1">Position Title at Another Company</h5>
+            <h6 class="mb-1 text-muted">Another Company</h6>
+            <p class="mb-1">
+                <strong>Duration:</strong> June 2018 - December 2019
+            </p>
+            <p class="mb-1">
+                <strong>Description:</strong> Briefly describe your role, responsibilities, and achievements in this position. Highlight any major projects or contributions.
+            </p>
+        </div>
+    </div>
+</div>

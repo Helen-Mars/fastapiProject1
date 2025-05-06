@@ -1,0 +1,29 @@
+<div class="card mb-3">
+    <div class="card-body d-flex flex-column">
+        <h5 class="mb-1">{{ publication.title }}</h5>
+        <h6 class="mb-1 text-muted">{{ publication.authors }}</h6>
+        <p class="mb-1">
+            <strong>Abstract:</strong> {{ publication.abstract }}
+        </p>
+        <p class="mb-1">
+            <strong>Published Date:</strong> {{ publication.published }}
+        </p>
+        <div class="d-flex justify-content-end">
+            <a class="icon-link icon-link-hover fs-6 me-5" href="{{ publication.link }}">
+                Read More
+                <svg class="bi" width="16" height="16">
+                    <use href="{{ url_for('bootstrap', path='/icon/bootstrap-icons.svg') }}#arrow-right"></use>
+                </svg>   
+            </a>
+            <a class="icon-link icon-link-hover fs-6" href="{{ publication.pdflink }}">
+                Download pdf
+                <svg class="bi" width="16" height="16">
+                    <use href="{{ url_for('bootstrap', path='/icon/bootstrap-icons.svg') }}#arrow-down"></use>
+                </svg>
+                
+            </a>            
+        </div>
+    </div>
+</div>
+
+

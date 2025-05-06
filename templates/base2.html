@@ -1,0 +1,176 @@
+<!doctype html>
+<html data-bs-theme="auto" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Dragon</title>
+    <title>Bootstrap demo</title>
+    <link href="{{ url_for('bootstrap', path='/dist/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('css', path='/mydoc.css') }}" rel="stylesheet">
+
+    {% block head_append %}
+    {% endblock %}
+</head>
+<body class="">
+<header class="bg-body-tertiary">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img alt="Logo" class="d-inline-block align-text-top" height="34" width="40"
+                            src="{{ url_for('images', path='/dragon-logo.png') }}">
+                    Dragon
+                </a>
+                <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                        class="navbar-toggler" data-bs-target="#navbarSupportedContent"
+                        data-bs-toggle="collapse" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a aria-current="page" class="nav-link active" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a aria-current="page" class="nav-link" href="{{ url_for('cultivation', topic='peace') }}">Cultivation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('travel', topic='place1') }}">Travel</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="/work">Achievement</a>
+                        </li>                                                
+                        <li class="nav-item dropdown">
+                            <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                role="button">
+                                Others
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/learning">Resume</a></li>
+                                <li><a class="dropdown-item" href="/cooperation">Cooperation</a></li>
+                                <li><a class="dropdown-item" href="/about">About</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex w-auto gap-2 flex-column flex-lg-row" role="search">
+                        <div class="input-group me-5 mb-2 mb-lg-0 w-100">
+                            <input aria-label="Search" class="form-control me-2" placeholder="Search" type="search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </div>
+                
+                        <div class="d-flex gap-2 w-100">
+                            <button class="btn btn-outline-primary w-100" type="button">Login</button>
+                            <button class="btn btn-outline-primary w-100" type="button" id="register-button">Register</button>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </nav>
+    </div>       
+</header>
+
+{% if hide_sidebar %}
+<div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
+    <aside class="bd-sidebar me-2">
+        <div class="">
+            <ul class="nav flex-column nav-underline">
+            {% block sidebar_links %}
+              <li class="nav-item">
+                <a href="#" class="nav-link active">Item1</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Item2</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Item3</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Item4</a>
+              </li>            
+            {% endblock %}
+            </ul>
+        </div>
+    </aside>
+    <main class="bd-main">
+        {% block main_append2 %}
+    
+        {% endblock %}
+    </main>
+</div>
+{% else %}
+    {% block main_append %}   
+    {% endblock %}
+{% endif %}
+
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" href="/">
+                <svg class="bi" height="24" width="30">
+                    <use href="{{ url_for('svgs', path='/icons.svg') }}#dragon-logo"/>
+                </svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Dragon, All rights.</span>
+            
+        </div>
+
+        <div class="col-12 col-md-auto justify-content-start mb-3 mb-md-0">
+            <span id="view-count" class="text-body-secondary ms-2"></span>
+        </div>        
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://youtube.com/@helenmars3315?si=O0BVAsGgVBcbeSQp">
+                    <svg class="bi" width="24" height="24" >
+                        <use href="{{ url_for('bootstrap', path='/icon/bootstrap-icons.svg') }}#youtube"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://www.tiktok.com/@helen.mars8?_t=ZS-8vlG3PZyK3O&_r=1">
+                    <svg class="bi" width="24" height="24" >
+                        <use href="{{ url_for('bootstrap', path='/icon/bootstrap-icons.svg') }}#tiktok"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://x.com/helen_mars250?s=09">
+                    <svg class="bi" width="24" height="24" >
+                        <use href="{{ url_for('bootstrap', path='/icon/bootstrap-icons.svg') }}#twitter-x"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://www.instagram.com/helenmars89?igsh=MXJlMWpwNjh0bnkzMA==">
+                    <svg class="bi" height="24" width="24">
+                        <use href="{{ url_for('svgs', path='/icons.svg') }}#instagram"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://www.facebook.com/share/1z1omaL9jmS9aUPQ/?mibextid=qi2Omg">
+                    <svg class="bi" height="24" width="24">
+                        <use href="{{ url_for('svgs', path='/icons.svg') }}#facebook"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+
+        {% block footer_append %}
+
+        {% endblock %}
+    </footer>
+</div>
+
+{% block script_append %}
+{% endblock %}
+
+<script src="{{ url_for('js', path='/public.js') }}"></script>
+<script src="{{ url_for('bootstrap', path='/dist/js/bootstrap.bundle.min.js') }}"></script>
+<!-- <script src="{{ url_for('lightbox2', path='/dist/js/lightbox-plus-jquery.js') }}"></script> -->
+
+
+</body>
+</html>

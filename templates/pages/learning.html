@@ -1,0 +1,184 @@
+{% extends "base2.html" %}
+
+{% block title %}Learning{% endblock %}
+
+{% block main_append %}
+
+<!-- resume channel -->
+<div class="container mt-4 mb-4">
+    <div class="container p-2">
+        <h1 class="mb-3 fw-semibold text-center fs-1">Welcome to My Resume</h1>
+        <p class="fw-normal fs-5 text-start text-muted">
+        As an enthusiastic and driven professional, I am passionate about using my skills to contribute meaningfully to the world around me. With a background in Polymer Chemistry and Physics, coupled with my experience in both academic and professional settings, I strive to bridge the gap between theory and practical application. My journey has been guided by curiosity, dedication, and a commitment to growth in every aspect of life—whether through my educational pursuits, professional endeavors, or personal passions.
+        <br><br>
+        In addition to my technical expertise, I have cultivated a deep interest in research and problem-solving, continuously seeking opportunities to improve and innovate. My aim is not only to excel in my field but also to inspire those around me by being an example of hard work, perseverance, and a constant drive for self-improvement. My journey is ongoing, and I am excited for the challenges and opportunities that lie ahead.
+        </p>
+    </div>
+    <hr class="mb-4">
+    </div>  
+
+    <div class="container mt-4 mb-4">
+        <div class="fs-2 mb-3">
+            <svg class="bi" width="32" height="32">
+                <use href="{{ url_for('bootstrap', path='/icon/bootstrap-icons.svg') }}#person-workspace"></use>
+            </svg>
+            Work Experience
+        </div>
+        <div class="card mb-4" style="width: 100%;">
+            <div class="row g-0 align-items-center">
+                <div class="col-12 col-md-4 d-flex justify-content-center flex-column" style="height: 200px;">
+                    <img src="{{ url_for('images', path='/dongjun.png') }}" class="img-fluid rounded-start" alt="..."
+                        style="max-height: 40%; max-width: 100%; object-fit: contain;">
+                </div>
+
+                <div class="col-12 col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">CAE Simulation Software Development Engineer</h5>
+                        <p class="card-text">
+                            <strong>Company name:</strong> DONGJUN Science and Technology Co.,Ltd <br>
+                            <strong>Date:</strong> Oct 2022 - Now<br>
+                            <strong> Main Responsibilities:</strong>
+                            <ul>
+                                <li>Development of software interfaces and functionalities.</li>
+                                <li>Implementation of experimental project requirement features.</li>
+                                <li>Computer-based implementation of physical models.</li>
+                                <li>Development of external software program interfaces.</li>
+                                <li>Integration of external libraries and functionalities.</li>
+                                <li>Research and application of functionalities from international simulation software.</li>
+                                <li>Development of web application features.</li>
+                                <li>Implementation of data post-processing and visualization.</li>
+                                <li>Preparation of project and technical documentation.</li>
+                            </ul>                            
+                            
+                            <a href="https://www.eastfdtd.com/" class="btn btn-primary">Learn more</a>
+                        </p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4" style="width: 100%;">
+            <div class="row g-0 align-items-center">
+                <div class="col-12 col-md-4 d-flex justify-content-center flex-column" style="height: 200px;">
+                    <img src="{{ url_for('images', path='/erdos.png') }}" class="img-fluid rounded-start" alt="..."
+                        style="max-height: 40%; max-width: 100%; object-fit: contain;">
+                </div>
+
+                <div class="col-12 col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Simulation Application Engineer</h5>
+                        <p class="card-text">
+                            <strong>Company name:</strong> Shanghai Erdos Industrial Technology Co., Ltd.<br>
+                            <strong>Date:</strong> Feb 2022 - Sep 2022<br>
+                            <strong> Main Responsibilities:</strong>
+                            <ul>
+                                <li>Field study and research on the ferrosilicon project.</li>
+                                <li>Process research on the measurement and application of industrial big data in the metallurgical industry.</li>
+                                <li>Modeling of industrial systems using Ansys and COMSOL software.</li>
+                                <li>Setting up model conditions and solver configurations.</li>
+                                <li>Optimizing model structures for better performance.</li>
+                                <li>Tracking project progress and timelines.</li>
+                                <li>Performing industrial big data analysis and visualization using Python.</li>
+                            </ul>
+                            
+                            <a href="https://www.chinaerdos.com/#/" class="btn btn-primary">Learn more</a>
+                        </p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4" style="width: 100%;">
+            <div class="row g-0 align-items-center">
+                <div class="col-12 col-md-4 d-flex justify-content-center flex-column" style="height: 200px;">
+                    <img src="{{ url_for('images', path='/shanghaicailiao.jpeg') }}" class="img-fluid rounded-start" alt="..."
+                        style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                </div>
+
+                <div class="col-12 col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">R&D Engineer</h5>
+                        <p class="card-text">
+                            <strong>Company name:</strong> Shanghai Materials Research Institute Co., Ltd.<br>
+                            <strong>Date:</strong> Feb 2021 - Jan 2022<br>
+                            <strong> Main Responsibilities:</strong>
+                            <ul>
+                                <li>Research on materials and formulations for PCB substrates.</li>
+                                <li>Study of manufacturing processes for PCB substrates.</li>
+                                <li>Design, modeling, machining, and performance evaluation of mechanical parts.</li>
+                                <li>Research on the fire resistance properties of materials.</li>
+                                <li>Testing of mechanical and thermal properties of materials.</li>
+                                <li>Research on the structures, properties, compositions, and manufacturing processes of acoustic metamaterials.</li>
+                                <li>Simulation design and application of antenna structures.</li>
+                            </ul>
+                            <a href="https://www.srim.com.cn/" class="btn btn-primary">Learn more</a>
+                        </p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container mt-4 mb-4">
+        <div class="fs-2 mb-3">
+            <svg class="bi" width="32" height="32">
+                <use href="{{ url_for('bootstrap', path='/icon/bootstrap-icons.svg') }}#mortarboard"></use>
+            </svg>
+            Education
+        </div>
+
+        <div class="card mb-4" style="width: 100%;">
+            <div class="row g-0 align-items-center">
+                <div class="col-12 col-md-4 d-flex justify-content-center flex-column" style="height: 200px;">
+                    <img src="{{ url_for('images', path='/school_logo.jpg') }}" class="img-fluid rounded-start" alt="..."
+                        style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                </div>
+
+                <div class="col-12 col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Master Experience</h5>
+                        <p class="card-text">
+                            <strong>School name:</strong> East China University of Science and Technology<br>
+                            <strong>Degree:</strong> Master of Science<br>
+                            <strong>Major:</strong> Polymer Chemistry and Physics<br>
+                            <strong>Graduation Year:</strong> 2021<br>
+                            <strong>Extra:</strong>This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.<br>
+                            <a href="https://www.ecust.edu.cn/main.htm" class="btn btn-primary">Learn more</a>
+                        </p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3" style="max-width: 100%;">
+            <div class="row g-0 align-items-center">
+                <div class="col-12 col-md-4 d-flex justify-content-center flex-column" style="height: 200px;">
+                    <img src="{{ url_for('images', path='/school_logo.jpg') }}" class="img-fluid rounded-start" alt="..."
+                        style="max-height: 100%; max-width: 100%; object-fit: contain;">
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Bachelor Experience</h5>
+                        <p class="card-text">
+                            <strong>School Name:</strong> East China University of Science and Technology<br>
+                            <strong>Degree:</strong> Bachelor of Engineering<br>
+                            <strong>Major:</strong>Polymer Materials Science and Engineering<br>
+                            <strong>Graduation Year:</strong> 2018<br>
+                            <strong>Extra:</strong>This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.<br>
+                            <a href="https://www.ecust.edu.cn/main.htm" class="btn btn-primary">Learn more</a>
+                        </p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

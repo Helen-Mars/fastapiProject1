@@ -1,0 +1,58 @@
+{% extends "base2.html" %}
+{% set hide_sidebar = true %}
+
+{% block head_append %}
+{% endblock %}
+
+
+{% block sidebar_links %}
+<li class="nav-item">
+  <a href="{{ url_for('cultivation', topic='peace') }}"
+    class="nav-link {% if topic == 'peace' %}active{% endif %}">Peace</a>
+</li>
+<li class="nav-item">
+  <a href="{{ url_for('cultivation', topic='elevate') }}"
+    class="nav-link {% if topic == 'elevate' %}active{% endif %}">Elevate</a>
+</li>
+<li class="nav-item">
+  <a href="{{ url_for('cultivation', topic='enjoy') }}"
+    class="nav-link {% if topic == 'enjoy' %}active{% endif %}">Enjoy</a>
+</li>
+{% endblock %}
+
+{% block main_append2 %}
+<div class="container p-2">
+  <h1 class="mb-3 fw-semibold text-center fs-1">Welcome to Cultivation Channel.</h1>
+  <p class="fw-normal fs-5 text-start text-muted">
+    In a world full of noise, we seek peace—a quiet strength that calms the mind and soothes the soul. We strive to
+    elevate ourselves—not just in skill or ambition, but in perspective and purpose. And ultimately, we learn to enjoy
+    each moment, finding joy in the ordinary and meaning in the stillness. Together, these three values—Peace, Elevate,
+    Enjoy—form a guiding philosophy for a life that is grounded, inspired, and deeply fulfilling.
+  </p>
+</div>
+<hr class="mb-4">
+{% if topic == "peace" %}
+
+<div class="container p-2">
+  <div class="row row-cols-1 g-4">
+    {% for card in cards %}
+      {% include 'components/audio_card.html' %}
+    {% endfor %}
+  </div>
+</div>
+
+
+
+{% elif topic == "elevate" %}
+<h2>打坐</h2>
+<p>打坐技巧与注意事项。</p>
+{% elif topic == "enjoy" %}
+<h2>持咒</h2>
+<p>持咒的意义和实践方法。</p>
+{% else %}
+{% endif %}
+{% endblock %}
+
+
+{% block script_append %}
+{% endblock %}

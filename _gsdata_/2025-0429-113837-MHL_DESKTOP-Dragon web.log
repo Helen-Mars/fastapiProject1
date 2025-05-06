@@ -1,0 +1,45 @@
+2025-04-29 11:38:37: -- Analysis Started by User
+2025-04-29 11:38:37: 左侧: State file does not exist: E:/FASTapi/fastApiProject1/_gsdata_/_file_state_v4._gs
+2025-04-29 11:38:37: 右侧: State file does not exist: ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/_gsdata_/_file_state_v4._gs
+2025-04-29 11:38:38: Cannot parse line: -rw-------    1 1000     1000      9584066 Jan 14 08:43 Ö»ÒªÆ½·².mp3: bad UTF-8 sequence at pos 6 in string &#214;&#187;&#210;&#170;&#198;&#189;&#183;&#178;.mp3
+2025-04-29 11:38:40: 变更：139， 冲突：0， 复制时间：0， 复制状态：0/37， 错误： 0, All: 180
+2025-04-29 11:38:40: Left to Right: Copy File: 112 Delete File: 27 
+2025-04-29 11:38:40: ----- ：分析已结束。 历时 00:00:03， 速度： 60 个文件/秒 -----
+2025-04-29 11:38:40: 
+2025-04-29 11:41:08: New _gsdata_ folder(s) created, so rescan all job folders for their ghosts
+2025-04-29 11:41:08: == Sync Started by User
+2025-04-29 11:41:08: 删除文件 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/fastapi.log'
+2025-04-29 11:41:09: 删除文件 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/output.log'
+2025-04-29 11:41:09: 删除文件 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/schemas/__init__.py'
+2025-04-29 11:41:09: 删除文件 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/schemas/some_schema.py'
+2025-04-29 11:41:09: 删除文件夹 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/schemas'
+2025-04-29 11:41:09: 删除文件夹 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/static/bootstrap/site/content/docs/5.3/examples'
+2025-04-29 11:41:09: 删除文件夹 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/static/bootstrap/site/content/docs/5.3'
+2025-04-29 11:41:09: 删除文件夹 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/static/bootstrap/site/content/docs'
+2025-04-29 11:41:09: 删除文件夹 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/static/bootstrap/site/content'
+2025-04-29 11:41:09: 删除文件夹 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/static/bootstrap/site'
+2025-04-29 11:41:09: 删除文件 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/static/header/assets/brand/bootstrap-logo-white.svg'
+2025-04-29 11:41:09: 删除文件 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/static/header/assets/brand/bootstrap-logo.svg'
+2025-04-29 11:41:09: 删除文件夹 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/static/header/assets/brand'
+2025-04-29 11:41:09: 删除文件 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/static/header/assets/dist/css/bootstrap.min.css'
+2025-04-29 11:41:09: 删除文件 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/static/header/assets/dist/css/bootstrap.min.css.map'
+2025-04-29 11:41:09: 删除文件 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/static/header/assets/dist/css/bootstrap.rtl.min.css'
+2025-04-29 11:41:09: 删除文件 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/static/header/assets/dist/css/bootstrap.rtl.min.css.map'
+2025-04-29 11:41:09: 删除文件夹 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/static/header/assets/dist/css'
+2025-04-29 11:41:09: 删除文件 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/static/header/assets/dist/js/bootstrap.bundle.min.js'
+2025-04-29 11:41:09: 删除文件 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/static/header/assets/dist/js/bootstrap.bundle.min.js.map'
+2025-04-29 11:41:09: 删除文件夹 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/static/header/assets/dist/js'
+2025-04-29 11:41:09: 删除文件夹 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/static/header/assets/dist'
+2025-04-29 11:41:09: 删除文件 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/static/header/assets/js/color-modes.js'
+2025-04-29 11:41:09: 删除文件夹 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/static/header/assets/js'
+2025-04-29 11:41:09: 删除文件夹 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/static/header/assets'
+2025-04-29 11:41:09: 删除文件 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/static/header/headers.css'
+2025-04-29 11:41:09: 删除文件夹 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/static/header'
+2025-04-29 11:41:09: 覆盖复制 'E:/FASTapi/fastApiProject1/.dockerignore' -> 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/.dockerignore'
+2025-04-29 11:41:10: 新建复制 'E:/FASTapi/fastApiProject1/.env' -> 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/.env'
+2025-04-29 11:41:36: FTP: Control connection lost was after good data transfer, so we assume data transfer was OK: receiving line: stopped by Stop By User
+2025-04-29 11:41:36: 覆盖复制 'E:/FASTapi/fastApiProject1/audio/peace_music/张晓红 - 千年一叹.mp3' -> 'ftp://122.51.22.226/home/ubuntu/fastapp/fastApiProject1/audio/peace_music/张晓红 - 千年一叹.mp3'
+- 错误: Error copying file: receiving line: stopped by Stop By User
+2025-04-29 11:41:36: FTP: reconnect succeeded
+2025-04-29 11:41:36: stopped by Stop By User
+2025-04-29 11:41:36: 

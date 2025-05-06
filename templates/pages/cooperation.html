@@ -1,0 +1,19 @@
+{% extends "base2.html" %}
+
+{% block title %}Cooperation{% endblock %}
+
+{% block head_append %}
+    <style>
+        .horizontal-center {
+            display: flex;
+            justify-content: center; /* Center content horizontally */
+            align-items: center;     /* Center content vertically */
+            height: 50vh;
+        }
+
+        .horizontal-center > div {
+            text-align: left;      /* Center text inside the inner div */
+        }
+    </style>
+<!--    <link rel="stylesheet" href="{{ url_for('css', path='/style.css') }}">-->
+{% endblock %}

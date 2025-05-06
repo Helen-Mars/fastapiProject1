@@ -1,0 +1,36 @@
+{% extends "base2.html" %}
+{% set hide_sidebar = true %}
+
+{% block head_append %}
+{% endblock %}
+
+
+{% block sidebar_links %}
+<li class="nav-item">
+  <a href="{{ url_for('travel', topic='place1') }}"
+    class="nav-link {% if topic == 'city1' %}active{% endif %}">Ho Chi Minh City</a>
+</li>
+<li class="nav-item">
+  <a href="{{ url_for('travel', topic='place2') }}"
+    class="nav-link {% if topic == 'city2' %}active{% endif %}">Place2</a>
+</li>
+<li class="nav-item">
+  <a href="{{ url_for('travel', topic='place3') }}"
+    class="nav-link {% if topic == 'place3' %}active{% endif %}">Place3</a>
+</li>
+{% endblock %}
+
+{% block main_append2 %}
+<div class="container p-2">
+  <h1 class="mb-3 fw-semibold text-center fs-1">Welcome to Travel Channel.</h1>
+  <p class="fw-normal fs-5 text-start text-muted">
+    In a world often defined by routine, we seek discovery—a journey beyond the familiar that awakens the senses and opens the heart. We travel not just to escape, but to connect: with cultures, with nature, and with ourselves. And ultimately, we learn to move with intention, savoring not only the destination but every step along the way. Together, these three values—Wonder, Connection, Presence—shape a way of travel that is meaningful, mindful, and unforgettable.
+  </p>
+</div>
+<hr class="mb-4">
+
+{% endblock %}
+
+
+{% block script_append %}
+{% endblock %}

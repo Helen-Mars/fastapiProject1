@@ -1,0 +1,35 @@
+{% extends "base2.html" %}
+
+{% block title %}Work{% endblock %}
+
+{% block main_append %}
+
+<div class="container mt-4 mb-4">
+    <div class="container p-2">
+        <h1 class="mb-3 fw-semibold text-center fs-1">Welcome to Achievement Channel.</h1>
+        <p class="fw-normal fs-5 text-start text-muted">
+            Welcome to the Achievement Channel — a comprehensive showcase of my academic, research, and professional
+            milestones. From peer-reviewed publications and innovative projects to awards, collaborations, and technical
+            breakthroughs, this space highlights the journey of continuous growth, curiosity, and contribution. </p>
+    </div>
+    <hr class="mb-4">
+    <!-- 论文展示部分 -->
+
+    <div class="container mt-3">
+        <div class="fs-2 mb-3">
+            <svg class="bi text-success" width="32" height="32" fill="currentColor">
+                <use href="{{ url_for('bootstrap', path='/icon/bootstrap-icons.svg') }}#book"></use>
+            </svg>
+            Publications
+        </div>
+
+        {% for publication in publications %}
+            {% include 'components/publication.html' %}
+        {% endfor %}        
+
+    </div>
+
+</div>
+
+
+{% endblock %}

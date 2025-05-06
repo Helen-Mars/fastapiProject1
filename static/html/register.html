@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            max-width: 500px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="text-center">User Registration</h2>
+        <form id="register-form">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Register</button>
+        </form>
+        <div id="error-message" class="alert alert-danger mt-3 d-none" role="alert">
+            Error: Username or email already registered.
+        </div>
+        <div id="success-message" class="alert alert-success mt-3 d-none" role="alert">
+            User registered successfully!
+        </div>
+    </div>
+
+    <!-- Link to Bootstrap JS and Popper.js (for Bootstrap features) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        document.getElementById('register-form').addEventListener('submit', async function(event) {
+            event.preventDefault();
+
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            const userData = {
+                username: username,
+                email: email,
+                password: password
+            };
+
+            try {
+                // Sending POST request to FastAPI backend
+                const response = await fetch('http://127.0.0.1:8000/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(userData),
+                });
+
+                if (response.ok) {
+                    // Success - show success message
+                    document.getElementById('success-message').classList.remove('d-none');
+                    document.getElementById('error-message').classList.add('d-none');
+                } else {
+                    // Error - show error message
+                    const errorData = await response.json();
+                    document.getElementById('error-message').textContent = errorData.detail || "An error occurred.";
+                    document.getElementById('error-message').classList.remove('d-none');
+                    document.getElementById('success-message').classList.add('d-none');
+                }
+            } catch (error) {
+                // Network or other errors
+                document.getElementById('error-message').textContent = "Network error. Please try again later.";
+                document.getElementById('error-message').classList.remove('d-none');
+                document.getElementById('success-message').classList.add('d-none');
+            }
+        });
+    </script>
+
+</body>
+</html>

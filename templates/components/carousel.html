@@ -1,0 +1,50 @@
+<style>
+    .carousel {
+        height: 700px;  /* 控制轮播图的整体高度 */
+    }
+    .carousel-inner {
+        height: 100%;
+    }
+    .carousel-inner img {
+        max-height: 700px; /* 控制图片的最大高度 */
+        object-fit: cover; /* 图片按比例填充 */
+    }
+    @media (max-width: 768px) {
+    .carousel {
+        height: 300px;  /* 控制轮播图的整体高度 */
+    }
+    .carousel-inner {
+        height: 100%;
+    }
+    .carousel-inner img {
+        max-height: 400px; /* 小屏幕时，调整高度 */
+    }
+    }
+</style>
+
+<div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+    <div class="carousel-indicators">
+        {% for carousel in carousel_list %}
+            <button aria-label="Slide {{ loop.index }}" data-bs-slide-to="{{ loop.index0 }}" 
+                    data-bs-target="#carouselExampleIndicators" type="button" 
+                    class="{% if loop.index == 1 %}active{% endif %}"></button>
+        {% endfor %}
+    </div>
+
+    <div class="carousel-inner">
+        {% for carousel in carousel_list %}
+            <div class="carousel-item {% if loop.index == 1 %}active{% endif %}">
+                <img src="{{ carousel }}" class="d-block w-100" alt="...">
+            </div>
+        {% endfor %}
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span aria-hidden="true" class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>

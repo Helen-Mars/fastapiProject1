@@ -1,0 +1,30 @@
+<div class="d-flex {% if is_child %}justify-content-end ms-5{% else %}justify-content-start{% endif %}">
+    <div class="card mb-3 w-100 border-light {% if is_child %}bg-light text-end{% endif %}" style="max-width: 700px;">
+        <div class="card-header">
+            <div class="d-flex {% if is_child %}justify-content-end{% else %}justify-content-start{% endif %} align-items-center flex-wrap">
+                <strong>From:</strong>&nbsp;{{ msg.name }}
+                {% if msg.parent_id and is_child %}
+                    <span class="text-muted ms-3">
+                        <strong>Replying to:</strong>&nbsp;{{ msg.parent_name or 'Unknown' }}
+                    </span>
+                {% endif %}
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="mb-3">
+                <h5 class="card-title mb-1">{{ msg.title }}</h5>
+            </div>
+            <div>
+                <p class="card-text">{{ msg.content }}</p>
+            </div>
+        </div>
+        <div class="card-footer d-flex justify-content-start align-items-center">
+            <small class="text-body-secondary">— {{ msg.create_at | datetimeformat }}</small>
+            {% if msg.is_approved %}
+                <span class="badge bg-success ms-4">Approved</span>
+            {% else %}
+                <span class="badge bg-warning">Pending</span>
+            {% endif %}
+        </div>
+    </div>
+</div>
